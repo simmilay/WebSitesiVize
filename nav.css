@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    background-color: #3d3d3d;
+    /*arka plana resim ekleme*/
+     background-image: url("img/bgc.png");
+
+}
+
+.navs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    /*eşit uzaklık*/
+
+}
+
+.navs li {
+    position: relative;
+}
+
+.navs a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px 20px;
+    background-color: #3d3d3d;
+    transition: background-color 0.3s;
+}
+
+.navs a:hover {
+    background-color: #697D65 ;
+}
+
+.navs ul {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navs li:hover>ul {
+    display:block;
+}
+
+.navs ul li {
+    border-bottom: 1px solid #555;
+    opacity: 1;
+}
+
+.navs ul ul {
+    top: 0;
+    left: 100%;
+}
+
+/*arkaplan rengini değiştirme*/
+.bgc a {
+    background-color: #697D65;
+}
+/*opacity*/
+.bgc :not(ul li):hover{
+    opacity:0.7 ;
+}
+
+/*arkaya resim ekleme*/
+.nav_alt_alt li a{
+    background-image: url("img/bgc.png");
+
+}
+
+.nav_alt a{
+    background-color: #3d3d3d;
+}

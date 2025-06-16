@@ -1,0 +1,230 @@
+.baslik {
+    background-color: #5A6258;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-size: large;
+    color: #FBFFF1;
+    border-bottom: 3px solid #FBFFF1;
+    border-top: 3px solid #ffffff
+}
+
+.bas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bas li {
+    position: relative;
+}
+
+
+
+/*yazi  kismi bitti ve  icerik kismi basliyorr.*/
+.icerik_1 {
+    height: auto;
+    background-color: #ffffff;
+    color: #3D3D3D;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    transition: font-size 0.3s ease;
+    display: flex;
+    border-bottom: 3px solid #3D3D3D;
+
+
+
+}
+
+.bgi {
+    background-image: url("img/bgi.jpg");
+    height: 450px;
+    width: 450PX;
+
+
+}
+
+/*linklerin kismi*/
+.icerik1_ici {
+    list-style-type: none;
+    margin-left: 15px;
+
+}
+
+.icerik1_ici a {
+    text-decoration: none;
+    color: #FBFFF1;
+    position: relative;
+
+}
+
+.icerik1_ici a::after{
+    content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3D3D3D;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+
+.icerik1_ici li {
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    margin-right: 29px;
+    margin-top: 40px;
+    width: 300px;
+    height: 35px;
+    background-color: #5A6258;
+    transition: box-shadow 0.3s ease;
+}
+
+.icerik1_ici a:hover::after{
+    transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+  
+  @keyframes wave {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+  }
+  
+.icerik1_ici li:hover {
+    font-size: 17px;
+    animation: wave 2s infinite; 
+    background: linear-gradient(to right, #3D3D3D, #C8DBCD);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+    
+}
+
+
+/*linklerin kismi son*/
+
+/*icerik kismi*/
+.content {
+    display: none;
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+
+
+
+}
+
+.content:target {
+
+    display: block;
+}
+
+.cab {
+    width: 800px;
+    height: 452px;
+    border: 0px solid;
+    color: #ffffff;
+    background-color: #5A6258;
+    display: block;
+    overflow: auto;
+    
+
+}
+
+.cab:target {
+    display: none;
+}
+
+/*pattis kismi*/
+.link1_icerik{
+    text-align: center;
+    line-height: 2;
+}
+.link_1_img {
+    display: flex;
+    justify-content: space-around;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.link_1_img img {
+    width: 135px;
+    height: 180px;
+}
+
+.link_1_img img:hover {
+    transform: scale(1.10);
+}
+/*istanbul kismi*/
+.link2_icerik{
+    text-align: center;
+    line-height: 2;
+}
+
+.link2_icerik img{
+    width: 170px; 
+    height: 200px; 
+    object-fit: cover;
+     
+}
+/*Simil kismi*/
+.tanitim{
+    text-align: center;
+    line-height: 2;
+}
+.link4_resim_1 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden; 
+}
+
+.link4_resim_1 img {
+    width: auto; 
+    height: 150px; 
+    object-fit: cover;
+    transition: transform 0.3s; 
+}
+
+.link4_resim_1 img:hover {
+    transform: scale(1.1); 
+}
+
+.link4_resim_2 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden; 
+}
+
+.link4_resim_2 img {
+    width: 175px; 
+    height: auto; 
+    object-fit: cover;
+    transition: transform 0.3s; 
+}
+
+.link4_resim_2 img:hover {
+    transform: scale(1.1); 
+}
+/*simmil bitti*/
+
+.haber {
+    background-color: #ffffff;
+    width: 450px;
+    height: 415px;
+    margin: 10px;
+    padding: 18px;
+    margin: auto;
+    text-align: center;
+    color: #5A6258;
+}
+
